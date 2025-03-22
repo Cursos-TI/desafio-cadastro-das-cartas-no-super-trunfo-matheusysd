@@ -95,35 +95,43 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
 
-
+    // Após calcular todos os atributos, fazer as comparações
     printf("\nComparação de Cartas:\n");
+
+    // Comparação de População
     printf("População: Carta %d venceu (%d)\n", 
            (populacao1 > populacao2) ? 1 : 2,
            (populacao1 > populacao2) ? 1 : 0);
-    
+
+    // Comparação de Área
     printf("Área: Carta %d venceu (%d)\n",
            (area1 > area2) ? 1 : 2,
            (area1 > area2) ? 1 : 0);
-    
+
+    // Comparação de PIB
     printf("PIB: Carta %d venceu (%d)\n",
            (pib1 > pib2) ? 1 : 2,
            (pib1 > pib2) ? 1 : 0);
-    
+
+    // Comparação de Pontos Turísticos
     printf("Pontos Turísticos: Carta %d venceu (%d)\n",
            (pontos_turisticos1 > pontos_turisticos2) ? 1 : 2,
            (pontos_turisticos1 > pontos_turisticos2) ? 1 : 0);
-    
+
+    // Comparação de Densidade Populacional (menor vence)
     printf("Densidade Populacional: Carta %d venceu (%d)\n",
-           (densidade1 < densidade2) ? 1 : 2,  // Menor densidade vence
+           (densidade1 < densidade2) ? 1 : 2,
            (densidade1 < densidade2) ? 1 : 0);
-    
+
+    // Comparação de PIB per Capita
     printf("PIB per Capita: Carta %d venceu (%d)\n",
            (pib_per_capita1 > pib_per_capita2) ? 1 : 2,
            (pib_per_capita1 > pib_per_capita2) ? 1 : 0);
-    
+
+    // Comparação de Super Poder
     printf("Super Poder: Carta %d venceu (%d)\n",
            (super_poder1 > super_poder2) ? 1 : 2,
            (super_poder1 > super_poder2) ? 1 : 0);
-    
+
     return 0;
 }
